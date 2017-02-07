@@ -17,7 +17,7 @@
  * @example $.fn.snow({ maxSize: 200, newOn: 1000 });
  */
 (function($){
-	
+	var interval = null;
 	$.fn.snow = function(options){
 	
 			var $flake 			= $('<div class="flake" />').css({'position': 'absolute', 'top': '-50px'}),
@@ -36,7 +36,7 @@
 			if (options.turnOn) {				
 				$flake.html(options.flakeChar);
 
-				var interval		= setInterval( function(){
+				interval		= setInterval( function(){
 					var startPositionLeft 	= Math.random() * documentWidth - 100,
 						startOpacity		= 0.5 + Math.random(),
 						sizeFlake			= options.minSize + Math.random() * options.maxSize,
