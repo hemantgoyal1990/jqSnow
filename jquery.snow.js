@@ -24,11 +24,11 @@
 				documentHeight 	= $(document).height(),
 				documentWidth	= $(document).width(),
 				defaults		= {
-									flakeChar	: "&#10052;", 
+									flakeChar	: "&#9829;", 
 									minSize		: 10,
 									maxSize		: 20,
 									newOn		: 500,
-									flakeColor	: ["#ffffff"],
+									flakeColor	: ["#ef4123"],
 									durationMillis: null
 								},
 				options			= $.extend({}, defaults, options);
