@@ -68,6 +68,7 @@
 						);
 				}, options.newOn);
 			}  else {
+				console.log("Hemant");
 				clearInterval(interval);
 				$(".flake").remove();
 			}
