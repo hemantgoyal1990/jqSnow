@@ -67,6 +67,9 @@
 							}
 						);
 				}, options.newOn);
+			}  else {
+				clearInterval(interval);
+				$(".flake").remove();
 			}
 
 			if (options.durationMillis) {
